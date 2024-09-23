@@ -19,8 +19,8 @@ public class SecuredRSAUUsageNew {
 
         try {
             // Load your own private and public keys
-            PrivateKey privateKey = KeyLoader.loadPrivateKey("/Users/bytedance/Documents/Project/UOB/RSA/rsa_private.key");
-            PublicKey publicKey = KeyLoader.loadPublicKeyFromCert("/Users/bytedance/Documents/Project/UOB/RSA/rsa_public.pem");
+            PrivateKey privateKey = KeyLoader.loadPrivateKey("/rsa_private.key");
+            PublicKey publicKey = KeyLoader.loadPublicKeyFromCert("/rsa_public.pem");
 
             // Encrypt and decrypt using your own keys
             //String encryptedText = rsaEncrypt(shortMessage, publicKey);
