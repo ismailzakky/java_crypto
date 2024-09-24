@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="bouncycastle.bcprov.jdk15on.1.57" type="repository">
+  <library name="stleary" type="repository">
     <properties maven-id="org.bouncycastle.bcprov-jdk15on.1.57.org.bouncycastle:bcprov-jdk15on:1.57" />
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/bcprov-jdk15on-1.57.jar!/" />

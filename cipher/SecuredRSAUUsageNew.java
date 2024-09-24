@@ -10,17 +10,19 @@ public class SecuredRSAUUsageNew {
 
     static int RSA_KEY_LENGTH = 4096;
     static String ALGORITHM_NAME = "RSA" ;
-    static String PADDING_SCHEME = "OAEPWITHSHA-512ANDMGF1PADDING" ;
+    static String PADDING_SCHEME = "PKCS1Padding" ;
     static String MODE_OF_OPERATION = "ECB" ; // This essentially means none behind the scene
 
     public static void main(String[] args) {
         String shortMessage = "TEST123" ;
         String encryptedText = "sJ3OIIoyL2TaQ1KL6UvY63YNPSkdw6VS3%2FDexKLO%2Fw2K3u5btF2ylQEWHPKOMS39Q%2F3iSz9eccldM63QjDtUiFHyT8ZJ%2FchXHsZYCPP0A6X%2Fi4XCHID%2BreAjN%2F0aaz1kr%2FFhvhw1gF9Ig89O3ZTHy4N3VN08Ap8KLVURvYQmwgPZtH3y28zAywcS40PaaENbBhPWMIXLr%2BIXkbjTtEH4BAR3G0%2FoUKsm2Onprz7osiK8NxLvAev%2BqR5YyhwGNoc1aI4Yo2NXnsTwb6W5QSx%2BLg56xqcz99ml6pyQwM4HLLlH%2FQjgEBWJ8Mgwaq24KW8OgCQzeYL5sPfc43XULpB0TA%3D%3D";
 
+        //ALGO_TRANSFORMATION_STRING = "AES/GCM/PKCS5Padding"
+
         try {
             // Load your own private and public keys
-            PrivateKey privateKey = KeyLoader.loadPrivateKey("/rsa_private.key");
-            PublicKey publicKey = KeyLoader.loadPublicKeyFromCert("/rsa_public.pem");
+            PrivateKey privateKey = KeyLoader.loadPrivateKey("/Users/bytedance/Documents/Project/UOB/RSA/rsa_private.key");
+            PublicKey publicKey = KeyLoader.loadPublicKeyFromCert("/Users/bytedance/Documents/Project/UOB/RSA/rsa_public.pem");
 
             // Encrypt and decrypt using your own keys
             //String encryptedText = rsaEncrypt(shortMessage, publicKey);
